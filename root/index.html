@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jason's Tutoring Services</title>
+<link rel="stylesheet" href = "styles/main.css">
+<link rel="shortcut icon" href="images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Jason Chan, Tutor, Jason's Tutoring Services, Computer Science, home, index">
+<meta name="author" content="Jason Chan">
+<meta name="description" content="Welcome to Jason's Tutoring Services. This tutoring service mainly offers tutoring for Computer Science courses. You will find all the things you need to pass your courses!">
+</head>
+
+<body>
+<div id="wrapper">
+<div class="flexVertical">
+
+<div><header align = "middle">Jason's Tutoring Services</header></div>
+
+<div>
+
+  <div class = "flexHorizontal">
+
+  <div>
+   <aside class = "leftside">
+	<div class = "flexVertical">
+        <div><div class = "links">Website Directories</div></div>
+	<div><a href = "index.html" class = "active-link">Home</a></div>
+	<div><a href = "about.html">About</a></div>
+	<div><a href = "tutoringservices.html">Tutoring Subjects</a></div>
+	<div><a href = "whymajor.html">Why C.S. Major?</a></div>
+	<div><a href = "jobs.html">C.S. Jobs</a></div>
+	<div><a href = "FAQ.html">FAQ</a></div>
+	<div><a href = "contact.html">Contact Me</a></div>
+
+	</div>
+   </aside>
+ </div>
+		
+	<div id = "space"></div>
+
+        <div>
+        <main> 
+
+	<img id = "transition" src = "images/learn.jpg" alt = "learn">
+        <h2> Get The Help That You Need!</h2>
+	<p>Everyone in college struggles at some point in their academics. The objective of this tutoring service is to assist you with overcoming these obstacles. There's no need to be shy. I'm here to help!</p> 
+        <h2> Improve Your Grades!</h2>
+	<p>Students who come to these tutoring sessions do better in their homework/lab assignments, projects and exams. You will be taught how to create algorithms to create programs.</p>
+        <h2> Get Ahead!</h2>
+	<p>During these sessions, you will be taught to understand what you may expect on your upcoming assignments and exams. This will give you the opportunity to jumpstart your projects and studies.</p>
+	<br>
+	<button onclick="printFunction()">Print this page</button>
+	<div id = "date"> </div>
+	</main>
+
+        </div>
+		<div id = "space"></div>
+	<div>
+	<aside class = "rightside">
+	<div><div class = "links">Download Links</div></div>
+	<ul>
+	<li><a href = "https://developer.android.com/studio">Android Studios</a></li>
+	<li><a href = "https://visualstudio.microsoft.com/">Visual Studios</a></li>
+	<li><a href = "https://netbeans.org/downloads/8.2/">Netbeans IDE</a></li>
+	<li><a href = "https://www.oracle.com/technetwork/java/javase/downloads/index.html">Java SE</a></li>
+	</ul>
+
+	</aside>
+	</div>
+  </div>
+
+   
+</div>
+
+
+<div>
+<footer align = "middle"><small><em>
+<br>Copyright © 2018 Jason's Tutoring Services</br>
+<a href = "mailto:jchanunh@student.fdu.edu">jchanunh@student.fdu.edu</a>
+<em></small></footer>
+</div>
+
+</div>
+
+</div>
+</body> 
+<script>
+var d = new Date();
+document.getElementById("date").innerHTML = d;
+</script>
+<script>
+function printFunction() {
+  window.print();
+}
+</script>
+<script src="detectmobilebrowser.js"></script>
+</html>

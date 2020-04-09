@@ -1,0 +1,268 @@
+header, nav, main, footer { 
+display: block; 
+}
+
+header{
+background-image: url("../images/tutorlogo.jpg");
+text-shadow: 2px 2px 2px gray;
+font-family: Arial, "Times New Roman", sans-serif;
+font-size: 30px;
+padding-top:20px;
+padding-bottom:20px;
+font-weight: bold;
+margin-bottom: 5px;
+width: 1024px;
+}
+
+body{
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat;
+  background-position: center; 
+  background-attachment: fixed;
+}
+
+.leftside {
+  height: 100%;
+  width: 160px;
+  top: 0;
+  left: 0;
+  background-color: cyan;
+  text-align: center;
+}
+
+.leftside a {
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, "Times New Roman", sans-serif;
+  color: black;
+  display: block;
+}
+
+.leftside a:hover {
+  color: white;
+}
+
+.rightside a:hover {
+  color: grey;
+}
+
+.leftside a:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover, a:active {
+  background-color: lightblue;
+}
+
+
+
+
+.rightside {
+  height: 100%;
+  width: 160px;
+  top: 0;
+  right: 0;
+  background-color: cyan;
+  text-align: center;
+}
+
+.rightside a{
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, "Times New Roman", sans-serif;
+  color: black;
+  display: block;
+}
+
+
+.links{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: underline;
+  font-size: 20px;
+  color: black;
+  display: block;
+  font-weight: bold;
+  font-family: Arial, "Times New Roman", sans-serif;
+  text-align: center;
+}
+
+.titles{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: underline;
+  font-size: 20px;
+  color: black;
+  display: block;
+  font-weight: bold;
+  font-family: Arial, "Times New Roman", sans-serif;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  font-family: Arial, "Times New Roman", sans-serif;
+  width: 694px;
+}
+
+main > p {
+  font-size: 20px; 
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+main > h2{
+ font-weight: bold;
+ padding-left: 5px;
+ padding-right: 5px;
+}
+
+
+footer{
+background-color: lightblue;
+font-family: Arial, "Times New Roman", sans-serif;
+width: 1024px;
+margin-top: 5px;
+}
+
+.flexVertical{
+display:flex;
+flex-direction:column;
+}
+
+.flexHorizontal{
+display: flex;
+flex-direction: row;
+}
+
+
+.active-link{
+background-color:green;
+}
+
+
+
+li{
+padding-right: 5px;
+}
+
+img{
+margin-left: auto;
+margin-right: auto;
+display:block;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+#space{
+margin:2.5px;
+}
+
+#wrapper { 
+           color: black;
+           width: 100%;
+           margin-right: auto;
+	   margin-left: auto;
+           min-width: 700px;
+           max-width: 1024px;
+}
+
+#date{
+padding-left:5px;
+padding-top: 10px;
+}
+
+#transition{
+width: 250px;
+height:150px;
+transition: width 10s, height 10s;
+}
+
+
+#transition:hover {
+ width: 400px;
+height:400px;
+}
+
+
+@media (max-width: 720px){
+
+body{
+background-image: url("../images/background2.gif");
+  background-repeat: repeat;
+  background-position: center; 
+  background-attachment: fixed;
+}
+
+}
+
+
+
+@media print{
+
+header{
+width: auto; 
+border-bottom: 2px solid cyan;
+color: cyan;
+}
+
+button{
+display:none;
+}
+
+#date{
+display:none;
+}
+
+
+body{
+font-family: Times New Roman, Times, serif;
+width: auto;
+border: none;
+background-color: white;
+  }
+
+main{
+width: auto;
+}
+
+main > p {
+  font-size: 125%; 
+ padding:0;
+}
+
+main > h2{
+padding:0;
+font-size: 125%; 
+}
+
+aside{
+display:none;
+}
+
+img{
+margin-left: auto;
+margin-right: auto;
+display:block;
+}
+
+ footer{
+padding-top: .75ems;
+border: 2px solid cyan;
+font-size: 87.5%;
+}
+
+
+
+}
