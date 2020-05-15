@@ -1,139 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Jason's Tutoring Services</title>
-<link rel="stylesheet" href = "styles/content.css">
-<link rel="shortcut icon" href="images/favicon.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="Jason Chan, Tutor, Jason's Tutoring Services, Computer Science, home, index">
-<meta name="author" content="Jason Chan">
-<meta name="description" content="Welcome to Jason's Tutoring Services. This tutoring service mainly offers tutoring for Computer Science courses. You will find all the things you need to pass your courses!">
-</head>
+    <head>
+        <title>Jason's Tutoring Services</title>
+        <link rel="stylesheet" href = "styles/content.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Jason Chan, Tutor, Jason's Tutoring Services, Computer Science, home, index">
+        <meta name="author" content="Jason Chan">
+        <meta name="description" content="Welcome to Jason's Tutoring Services. This tutoring service mainly offers tutoring for Computer Science courses. You will find all the things you need to pass your courses!">
+    </head>
 
-<body>
-<div id="wrapper">
-<div class="flexVertical">
+    <body>
+        <div id="wrapper">
+            <div class="flexVertical">
 
-<div><header align = "middle">Jason's Tutoring Services</header></div>
+                <div><header>Jason's Tutoring Services</header></div>
 
-<div>
+                <div class = "flexHorizontal">
 
-  <div class = "flexHorizontal">
+                    <div>
+                        <aside>
+                            <div class = "flexVertical">
+                                <div class = "links">Website Directories</div>
+                                <div><a href = "index.html">Home</a></div>
+                                <div><a href = "about.html">About</a></div>
+                                <div><a href = "tutoringservices.html">Tutoring Subjects</a></div>
+                                <div><a href = "whymajor.html">Why C.S. Major?</a></div>
+                                <div><a href = "jobs.html">C.S. Jobs</a></div>
+                                <div><a href = "FAQ.html">FAQ</a></div>
+                                <div><a href = "contact.html" class = "active-link">Contact Me</a></div>
+                            </div>
+                        </aside>
+                    </div>
 
-<div>
-   <aside>
-	<div class = "flexVertical">
-        <div><div class = "links">Website Directories</div></div>
-	<div><a href = "index.html">Home</a></div>
-	<div><a href = "about.html">About</a></div>
-	<div><a href = "tutoringservices.html">Tutoring Subjects</a></div>
-	<div><a href = "whymajor.html">Why C.S. Major?</a></div>
-	<div><a href = "jobs.html">C.S. Jobs</a></div>
-	<div><a href = "FAQ.html">FAQ</a></div>
-	<div><a href = "contact.html" class = "active-link">Contact Me</a></div>
+                    <div id = "space"> </div>
 
-	</div>
-   </aside>
- </div>
+                    <div>
+                        <main> 
+                            <form name = "ContactForm"
+                                  onsubmit = "return submitAlert()" 
+                                  action="index.html"
+                                  method="post" 
+                                  enctype="text/plain">
 
-<div id = "space"> </div>
+                                <label for="firstname">First Name: </label>
+                                <input type="text" name ="firstname"  id="firstname"><br>
 
-        <div>
-        <main> 
-<form name = "ContactForm"
-onsubmit = "return submitAlert()" 
-action="index.html"
-method="post" 
-enctype="text/plain">
+                                <label for="lastname">Last Name: </label>
+                                <input type="text" name ="lastname"  id="lastname"><br>
 
-<label for="firstname">First Name: </label>
- <input type="text" name ="firstname"  id="firstname"><br>
+                                <label for="enroll">Are you currently enrolled in these courses: </label>
+                                <input type="radio" name="enroll" id="yes">Yes
+                                <input type="radio" name="enroll" id="no">No<br>
 
-<label for="lastname">Last Name: </label>
- <input type="text" name ="lastname"  id="lastname"><br>
+                                <label for="courses">Tutoring Courses: </label>
+                                <select name = "courses" id = "courses">
+                                    <option value="other">Others</option>
+                                    <option value="compprog">Computer Programming</option>
+                                    <option value="cloud">Cloud Computing</option>
+                                    <option value="mobile">Mobile Application Development</option>
+                                    <option value="data">Data Structures</option>
+                                </select> <br>
 
-<label for="enroll">Are you currently enrolled in these courses: </label>
-  <input type="radio" name="enroll" id="yes">Yes
-  <input type="radio" name="enroll" id="no">No<br>
+                                <label for="phone">Phone Number: </label>
+                                <input type="tel" name ="phone"  id="phone" maxlength = "10"><br>
 
-<label for="courses">Tutoring Courses: </label>
-<select name = "courses" id = "courses">
-  <option value="other">Others</option>
-  <option value="compprog">Computer Programming</option>
-  <option value="cloud">Cloud Computing</option>
-  <option value="mobile">Mobile Application Development</option>
-  <option value="data">Data Structures</option>
-</select> <br>
+                                <label for="email">Email: </label>
+                                <input type="text" name ="email"  id="email"><br>
 
-<label for="phone">Phone Number: </label>
-<input type="tel" name ="phone"  id="phone" maxlength = "10"><br>
+                                <label for="questions">Questions:</label>
+                                <textarea name= "questions" id = "questions" rows = "10" cols = "50"></textarea><br>
 
-<label for="email">Email: </label>
-<input type="text" name ="email"  id="email"><br>
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
 
-<label for="questions">Questions:</label>
-<textarea name= "questions" id = "questions" rows = "10" cols = "50"></textarea><br>
+                            </form>
+                            <div id = "date"> </div>
+                        </main>
+                    </div>
 
-<input type="submit" value="Submit">
-<input type="reset" value="Reset">
-  
-</form>
-<div id = "date"> </div>
-	</main>
+                </div>
+
+                <div>
+                    <footer><small><em>
+                                <br>Copyright @ 2018 Jason's Tutoring Services</br>
+                                <a href = "mailto:jchanunh@student.fdu.edu">jchanunh@student.fdu.edu</a>
+                            </em></small></footer>
+                </div>
+
+            </div>
+
         </div>
 
-  </div>
-
-   
-</div>
 
 
-<div>
-<footer align = "middle"><small><em>
-<br>Copyright © 2018 Jason's Tutoring Services</br>
-<a href = "mailto:jchanunh@student.fdu.edu">jchanunh@student.fdu.edu</a>
-<em></small></footer>
-</div>
+        <script>
+            function submitAlert() {
+                var fname = document.forms["ContactForm"]["firstname"].value;
+                var lname = document.forms["ContactForm"]["lastname"].value;
+                var enroll = document.forms["ContactForm"]["enroll"].value;
+                var phone = document.forms["ContactForm"]["phone"].value;
+                var email = document.forms["ContactForm"]["email"].value;
+                var question = document.forms["ContactForm"]["questions"].value;
 
-</div>
+                if (fname == "" || lname == "" || phone == "" || email == "" || question == "" || enroll == "") {
+                    alert("Error: Please fill out all information");
+                    return false;
+                } else {
+                    var check = confirm("Are you sure you want to submit this information?");
+                    if (check == true) {
+                        alert("Form submitted successfully!");
+                        form.submit();
+                    } else {
+                        alert("Form was not submitted.");
+                        return false;
+                    }
+                }
+            }
+        </script>
 
-</div>
-
-
-</body> 
-<script>
-function submitAlert(){
-var fname = document.forms["ContactForm"]["firstname"].value;
-var lname = document.forms["ContactForm"]["lastname"].value;
-var enroll = document.forms["ContactForm"]["enroll"].value;
-var phone = document.forms["ContactForm"]["phone"].value;
-var email = document.forms["ContactForm"]["email"].value;
-var question = document.forms["ContactForm"]["questions"].value;
-
-if(fname == "" || lname == "" || phone =="" || email =="" || question =="" ||enroll == ""){
-alert("Error: Please fill out all information");
-return false;
-}
-
-else{
-var check = confirm("Are you sure you want to submit this information?");
-if(check == true){
-alert("Form submitted successfully!");
-form.submit();
-}
-else{
-alert("Form was not submitted.");
-return false;
-}
-}
-
-
-
-}
-</script>
-
-<script>
-var d = new Date();
-document.getElementById("date").innerHTML = d;
-</script>
-
+        <script>
+            var d = new Date();
+            document.getElementById("date").innerHTML = d;
+        </script>
+    </body> 
 </html>

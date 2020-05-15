@@ -12,6 +12,7 @@ padding-bottom:20px;
 font-weight: bold;
 margin-bottom:5px;
 width: 1024px;
+text-align: center;
 }
 
 body{
@@ -106,6 +107,7 @@ background-color: lightblue;
 font-family: Arial, "Times New Roman", sans-serif;
 margin-top: 5px;
 width: 1024px;
+text-align: center;
 }
 
 .flexVertical{
