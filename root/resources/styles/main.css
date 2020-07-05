@@ -35,6 +35,7 @@ nav a {
     font-size: 20px;
     font-family: Arial, "Times New Roman", sans-serif;
     color:black;
+
 }
 
 nav a:hover {
@@ -91,6 +92,7 @@ footer{
     margin-right: auto;
     margin-left: auto;
     max-width: 1024px;
+    min-width:635px;
 }
 
 .transition{
@@ -112,7 +114,7 @@ footer{
     header{margin-bottom:0px;}
 
     #content-wrapper{
-        display: flex;
+	display: flex;
         flex-direction: column;
     }
 
@@ -133,7 +135,11 @@ footer{
 
     .navtitle{display: none;}
 
-    main{width:100%;}
+    main{
+	width:100%;
+	margin-right:0px;
+	margin-left:0px
+    }
 
     footer{margin-top:0px;}
 

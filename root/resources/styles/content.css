@@ -107,6 +107,7 @@ td, th{
     margin-right: auto;
     margin-left: auto;
     max-width: 1024px;
+    min-width: 635px;
 }
 
 #message{
@@ -151,9 +152,7 @@ form{
     text-align: center;
 }
 
-.imgcontainer:hover .overlay {
-    opacity: 1;
-}
+.imgcontainer:hover .overlay {opacity: 1;}
 
 .animate{
     animation-name:filter;
@@ -178,21 +177,17 @@ form{
 }
 
 
-.transition:hover {
-    width: 100%;
-}
+.transition:hover{width: 100%;}
 
 figure {
     border: 2px cyan solid;
     padding: 10px;
-    margin: auto;
 }
 
 figcaption {
     font-style: italic;
     text-align: center;
 }
-
 
 video{
     margin:auto;
