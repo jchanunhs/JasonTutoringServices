@@ -1,4 +1,5 @@
 # JasonTutoringServices
+## Purpose of this project is to learn how to design and implement a webpage.
 
 Created a web application motivated by teacher assistant position. 
 
