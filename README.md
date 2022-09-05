@@ -13,5 +13,6 @@ Application contains 7 web pages and utilizes the following technologies:
 - JavaScript to get the current date and form submission
 - JQuery UI for tabs and accordions
 
-
 Note: Form page redirects user to homepage after submit. 
+
+## Purpose of this project is to learn how to design and implement a webpage.
