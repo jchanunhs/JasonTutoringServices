@@ -1,94 +1,92 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Jason's Tutoring Services</title>
-        <link rel="stylesheet" href="../resources/styles/content.css">
-	<link rel="stylesheet" href="../resources/styles/print.css" media="print">
-        <link rel= "shortcut icon" href= "../resources/images/favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Jason Chan, Tutor, Jason's Tutoring Services, Computer Science, home, index">
-        <meta name="author" content="Jason Chan">
-        <meta name="description" content="Welcome to Jason's Tutoring Services. This tutoring service mainly offers tutoring for Computer Science courses. You will find all the things you need to pass your courses!">
-    </head>
-    <body>
-        <div id="wrapper">
-            <header>Jason's Tutoring Services</header>
-            <div id ="content-wrapper">
-                <nav>
-                    <div class = "navtitle">Website Directories</div>
-                    <a href = "index.html">Home</a>
-                    <a href = "about.html">About</a>
-                    <a href = "tutoringservices.html">Tutoring Subjects</a>
-                    <a href = "whymajor.html">Why C.S. Major?</a>
-                    <a href = "jobs.html">C.S. Jobs</a>
-                    <a href = "FAQ.html">FAQ</a>
-                    <a href = "contact.html" id = "active-link">Contact Me</a>
-                </nav>
-                <main> 
-                    <h1 align ="center">Contact Me</h1>
-                    <form name = "ContactForm"
-                          onsubmit = "return submitAlert()" 
-                          action="index.html"
-                          method="post" 
-                          enctype="text/plain">
-                        <label for="firstname">First Name: </label>
-                        <input type="text" name ="firstname"  id="firstname"><br>
-                        <label for="lastname">Last Name: </label>
-                        <input type="text" name ="lastname"  id="lastname"><br>
-                        <label for="enroll">Are you currently enrolled in these courses: </label>
-                        <input type="radio" name="enroll" id="yes">Yes
-                        <input type="radio" name="enroll" id="no">No<br>
-                        <label for="courses">Tutoring Courses: </label>
-                        <select name = "courses" id = "courses">
-                            <option value="other">Others</option>
-                            <option value="compprog">Computer Programming</option>
-                            <option value="cloud">Cloud Computing</option>
-                            <option value="mobile">Mobile Application Development</option>
-                            <option value="data">Data Structures</option>
-                        </select> <br>
-                        <label for="phone">Phone Number: </label>
-                        <input type="tel" name ="phone"  id="phone" maxlength = "10"><br>
-                        <label for="email">Email: </label>
-                        <input type="text" name ="email"  id="email"><br>
-                        <label for="questions">Questions:</label>
-                        <textarea name= "questions" id = "questions" rows = "10" cols = "50"></textarea><br>
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
-                    </form>
-                    <div id = "date"> </div>
-                </main>
-            </div>
-            <footer><small><em>
-                        Copyright © 2018 Jason's Tutoring Services<br>
-                        <a href = "mailto:jchanunh@student.fdu.edu">jchanunh@student.fdu.edu</a>
-                    </em></small></footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Jason Chan, Tutor, Jason's Tutoring Services, Computer Science, home, index">
+    <meta name="author" content="Jason Chan">
+    <meta name="description" content="Welcome to Jason's Tutoring Services. This tutoring service mainly offers tutoring for Computer Science courses. You will find all the things you need to pass your courses!">
+    <title>Jason's Tutoring Services</title>
+    <link rel="stylesheet" href="../resources/styles/content.css">
+    <link rel="stylesheet" href="../resources/styles/print.css" media="print">
+    <link rel="shortcut icon" href="../resources/images/favicon.ico">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Jason's Tutoring Services</h1>
+        </header>
+        <div id="content-wrapper">
+            <nav aria-label="Main Navigation">
+                <div class="navtitle">Website Directories</div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="tutoringservices.html">Tutoring Subjects</a>
+                <a href="whymajor.html">Why C.S. Major?</a>
+                <a href="jobs.html">C.S. Jobs</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="contact.html" id="active-link">Contact Me</a>
+            </nav>
+            <main>
+                <h1 class="text-center">Contact Me</h1>
+                <form name="ContactForm" onsubmit="return submitAlert()" action="index.html" method="post" enctype="text/plain">
+                    <label for="firstname">First Name: </label>
+                    <input type="text" name="firstname" id="firstname" required><br>
+                    <label for="lastname">Last Name: </label>
+                    <input type="text" name="lastname" id="lastname" required><br>
+                    <label for="enroll">Are you currently enrolled in these courses: </label>
+                    <input type="radio" name="enroll" id="yes" value="yes" required>Yes
+                    <input type="radio" name="enroll" id="no" value="no" required>No<br>
+                    <label for="courses">Tutoring Courses: </label>
+                    <select name="courses" id="courses">
+                        <option value="other">Others</option>
+                        <option value="compprog">Computer Programming</option>
+                        <option value="cloud">Cloud Computing</option>
+                        <option value="mobile">Mobile Application Development</option>
+                        <option value="data">Data Structures</option>
+                    </select><br>
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="johnsmith@gmail.com" required><br>
+                    <label for="questions">Questions:</label>
+                    <textarea name="questions" id="questions" rows="10" cols="50" required></textarea><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+                <div id="date"></div>
+            </main>
         </div>
-        <script>
-            function submitAlert() {
-                var fname = document.forms["ContactForm"]["firstname"].value;
-                var lname = document.forms["ContactForm"]["lastname"].value;
-                var enroll = document.forms["ContactForm"]["enroll"].value;
-                var phone = document.forms["ContactForm"]["phone"].value;
-                var email = document.forms["ContactForm"]["email"].value;
-                var question = document.forms["ContactForm"]["questions"].value;
+        <footer>
+            <small><em>
+                Copyright © 2018 Jason's Tutoring Services<br>
+                <a href="mailto:jchanunh@student.fdu.edu">jchanunh@student.fdu.edu</a>
+            </em></small>
+        </footer>
+    </div>
+    <script>
+        function submitAlert() {
+            var fname = document.forms["ContactForm"]["firstname"].value;
+            var lname = document.forms["ContactForm"]["lastname"].value;
+            var enroll = document.forms["ContactForm"]["enroll"].value;
+            var phone = document.forms["ContactForm"]["phone"].value;
+            var email = document.forms["ContactForm"]["email"].value;
+            var question = document.forms["ContactForm"]["questions"].value;
 
-                if (fname == "" || lname == "" || phone == "" || email == "" || question == "" || enroll == "") {
-                    alert("Error: Please fill out all information");
-                    return false;
-                } else {
-                    var check = confirm("Are you sure you want to submit this information?");
-                    if (check == true) {
-                        alert("Form submitted successfully!");
-                        form.submit();
-                    } else {
-                        alert("Form was not submitted.");
-                        return false;
-                    }
-                }
+
+            var check = confirm("Are you sure you want to submit this information?");
+            if (check == true) {
+                alert("Form submitted successfully!");
+                form.submit();
+            } else {
+                alert("Form was not submitted.");
+                return false;
             }
-        </script>
-        <script>
-            var d = new Date();
-            document.getElementById("date").innerHTML = d;
-        </script>
-    </body> 
+        }
+    </script>
+    <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d.toDateString();
+    </script>
+</body>
 </html>

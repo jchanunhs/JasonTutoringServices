@@ -1,13 +1,27 @@
-nav, video{display:none;}
-
-header,body{background:none;}
-
-main {
-width:100%;
-margin:auto;
+/* CSS Variables */
+:root {
+    --background-color: cyan;
+    --text-color: white;
 }
 
-header,footer{
-background-color:cyan;
-color:white;
+/* Hide unnecessary elements for print */
+nav, video {
+    display: none;
+}
+
+/* Remove background images */
+header, body {
+    background: none;
+}
+
+/* Main content styling */
+main {
+    width: 100%;
+    margin: auto;
+}
+
+/* Header and footer styling */
+header, footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }

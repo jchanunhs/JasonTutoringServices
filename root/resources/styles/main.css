@@ -1,149 +1,156 @@
-body{
+/* CSS Variables */
+:root {
+    --background-color: cyan;
+    --font-family: Arial, "Times New Roman", sans-serif;
+    --font-size-large: 25px;
+    --font-size-medium: 20px;
+    --font-size-small: 15px;
+    --text-color: black;
+    --hover-background-color: lightyellow;
+    --active-color: green;
+    --active-background-color: lightgreen;
+    --header-shadow: 2px 2px 2px gray;
+}
+
+/* Global Styles */
+body {
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position:center;
-    background-size:cover;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--font-family);
 }
 
-header{
+header {
     background-image: url("../images/tutorlogo.jpg");
-    text-shadow: 2px 2px 2px gray;
-    font-family: Arial, "Times New Roman", sans-serif;
-    font-size: 30px;
-    padding-top:20px;
-    padding-bottom:20px;
+    text-shadow: var(--header-shadow);
+    font-size: var(--font-size-large);
+    padding: 10px 0;
     font-weight: bold;
-    margin-bottom:5px;
+    margin-bottom: 5px;
     text-align: center;
-    width:100%;
+    width: 100%;
 }
 
 nav {
-    background-color: cyan;
+    background-color: var(--background-color);
     text-align: center;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     width: 15%;
     height: auto;
 }
 
 nav a {
-    padding-top: 5px; 
-    padding-bottom: 5px;
+    padding: 5px 0;
     text-decoration: none;
-    font-size: 20px;
-    font-family: Arial, "Times New Roman", sans-serif;
-    color:black;
-
+    font-size: var(--font-size-medium);
+    color: var(--text-color);
 }
 
 nav a:hover {
-    background-color: lightyellow;
+    background-color: var(--hover-background-color);
     text-decoration: underline;
-    font-weight:bold;
-}
-
-nav a:active{
-    color:green;
-    text-decoration: underline;
-}
-
-
-#active-link{
-    background-color: lightgreen;
-}
-
-.navtitle{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: underline;
-    font-size: 20px;
     font-weight: bold;
-    font-family: Arial, "Times New Roman", sans-serif;
+}
+
+nav a:active {
+    color: var(--active-color);
+    text-decoration: underline;
+}
+
+#active-link {
+    background-color: var(--active-background-color);
+}
+
+.navtitle {
+    padding: 5px 0;
+    text-decoration: underline;
+    font-size: var(--font-size-medium);
+    font-weight: bold;
     text-align: center;
 }
 
 main {
     background-color: white;
-    font-family: Arial, "Times New Roman", sans-serif;
     width: 70%;
-    margin-right:5px; 
-    margin-left: 5px;
+    margin: 0 5px;
 }
 
-footer{
-    background-color: cyan;
-    font-family: Arial, "Times New Roman", sans-serif;
+footer {
+    background-color: var(--background-color);
     margin-top: 5px;
     text-align: center;
-    padding-top:10px;
-    width:100%;
-    font-size:15px;
-    font-weight:bold;
+    padding-top: 10px;
+    width: 100%;
+    font-size: var(--font-size-small);
+    font-weight: bold;
 }
 
-#content-wrapper{
+#content-wrapper {
     display: flex;
     flex-direction: row;
 }
 
-#wrapper { 
-    margin-right: auto;
-    margin-left: auto;
+#wrapper {
+    margin: 0 auto;
     max-width: 1024px;
-    min-width:635px;
+    min-width: 635px;
 }
 
-.transition{
-    width:50%;    
+.transition {
+    width: 50%;
     transition: width 10s;
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
+    margin: 0 auto;
+    display: block;
 }
-
 
 .transition:hover {
     width: 100%;
 }
 
+.text-center {
+    text-align: center;
+}
 
+/* Responsive Design */
 @media screen and (max-width: 700px) {
+    header {
+        margin-bottom: 0;
+    }
 
-    header{margin-bottom:0px;}
-
-    #content-wrapper{
-	display: flex;
+    #content-wrapper {
         flex-direction: column;
     }
 
-    nav{
-        display:flex;
-        flex-direction:row;
+    nav {
+        flex-direction: row;
         justify-content: center;
-        width:100%;
-        margin-right:0px; 
-        border-top:2px solid black;
-        border-bottom:2px solid black;
+        width: 100%;
+        margin-right: 0;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
     }
 
     nav a {
-        padding-left:15px;
-        padding-right:15px;
+        padding: 0 15px;
     }
 
-    .navtitle{display: none;}
-
-    main{
-	width:100%;
-	margin-right:0px;
-	margin-left:0px;
+    .navtitle {
+        display: none;
     }
 
-    footer{margin-top:0px;}
+    main {
+        width: 100%;
+        margin: 0;
+    }
 
-    #downloadnav{display:none;}
+    footer {
+        margin-top: 0;
+    }
 
+    #downloadnav {
+        display: none;
+    }
 }
-

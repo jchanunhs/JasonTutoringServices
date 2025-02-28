@@ -1,58 +1,70 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Jason's Tutoring Services</title>
-        <link rel="stylesheet" href="../resources/styles/content.css">
-	<link rel="stylesheet" href="../resources/styles/print.css" media="print">
-        <link rel= "shortcut icon" href= "../resources/images/favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Jason Chan, Tutor, Jason's Tutoring Services, Computer Science, home, index">
-        <meta name="author" content="Jason Chan">
-        <meta name="description" content="Welcome to Jason's Tutoring Services. This tutoring service mainly offers tutoring for Computer Science courses. You will find all the things you need to pass your courses!">
-    </head>
-    <body>
-        <div id="wrapper">
-            <header>Jason's Tutoring Services</header>
-            <div id ="content-wrapper">
-                <nav>
-                    <div class = "navtitle">Website Directories</div>
-                    <a href = "index.html">Home</a>
-                    <a href = "about.html" id = "active-link" >About</a>
-                    <a href = "tutoringservices.html">Tutoring Subjects</a>
-                    <a href = "whymajor.html">Why C.S. Major?</a>
-                    <a href = "jobs.html">C.S. Jobs</a>
-                    <a href = "FAQ.html">FAQ</a>
-                    <a href = "contact.html">Contact Me</a>
-                </nav>
-                <main> 
-                    <h1 align ="center">About Me</h1>
-                    <h2 >The Creator</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Jason Chan, Tutor, Jason's Tutoring Services, Computer Science, home, index">
+    <meta name="author" content="Jason Chan">
+    <meta name="description" content="Welcome to Jason's Tutoring Services. This tutoring service mainly offers tutoring for Computer Science courses. You will find all the things you need to pass your courses!">
+    <title>Jason's Tutoring Services</title>
+    <link rel="stylesheet" href="../resources/styles/content.css">
+    <link rel="stylesheet" href="../resources/styles/print.css" media="print">
+    <link rel="shortcut icon" href="../resources/images/favicon.ico">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Jason's Tutoring Services</h1>
+        </header>
+        <div id="content-wrapper">
+            <nav aria-label="Main Navigation">
+                <div class="navtitle">Website Directories</div>
+                <a href="index.html">Home</a>
+                <a href="about.html" id="active-link">About</a>
+                <a href="tutoringservices.html">Tutoring Subjects</a>
+                <a href="whymajor.html">Why C.S. Major?</a>
+                <a href="jobs.html">C.S. Jobs</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="contact.html">Contact Me</a>
+            </nav>
+            <main>
+                <h1 class="text-center">About Me</h1>
+                <section>
+                    <h2>The Creator</h2>
                     <p>Hi, my name is Jason Chan. I'm currently a major in Computer Science and a minor in Mathematics. 
                         I've been a Teacher Assistant for the past 3 years, so I understand the issues that students face
-                        and how to assist them. </p>
+                        and how to assist them.</p>
                     <div class="imgcontainer">
-                        <div class = "animate"><img src="../resources/images/profile.jpg" alt="Jason Chan" class="imgoverlay"></div>
+                        <div class="animate">
+                            <img src="../resources/images/profile.jpg" alt="Jason Chan" class="imgoverlay">
+                        </div>
                         <div class="overlay">Jason Chan</div>
                     </div>
+                </section>
+                <section>
                     <h2>The Exposure</h2>
-                    <p>We will various integrated develop environments to design, create and test our programs. An example of an IDE is <strong>figure 1</strong>, which utilizes the Java Language for Netbeans.
+                    <p>We will use various integrated development environments to design, create, and test our programs. An example of an IDE is <strong>figure 1</strong>, which utilizes the Java Language for NetBeans.
                         Please note that Java Language is not a mandatory language that will be used in this tutoring service.</p>
                     <figure>
-                        <a href = "../resources/images/netbeans.jpg">
-                            <img src="../resources/images/netbeans.jpg" alt="Netbeans Interface" width = 100% height = "250">
+                        <a href="../resources/images/netbeans.jpg">
+                            <img src="../resources/images/netbeans.jpg" alt="NetBeans Interface" style="width: 100%; height: 250px;">
                         </a>
-                        <figcaption>Figure 1: Netbeans Interface</figcaption>
+                        <figcaption>Figure 1: NetBeans Interface</figcaption>
                     </figure>
-                    <div id = "date"> </div>
-                </main>
-            </div>
-            <footer><small><em>
-                        Copyright © 2018 Jason's Tutoring Services<br>
-                        <a href = "mailto:jchanunh@student.fdu.edu">jchanunh@student.fdu.edu</a>
-                    </em></small></footer>
+                </section>
+                <div id="date"></div>
+            </main>
         </div>
-        <script>
-            var d = new Date();
-            document.getElementById("date").innerHTML = d;
-        </script>
-    </body> 
+        <footer>
+            <small><em>
+                Copyright © 2018 Jason's Tutoring Services<br>
+                <a href="mailto:jchanunh@student.fdu.edu">jchanunh@student.fdu.edu</a>
+            </em></small>
+        </footer>
+    </div>
+    <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d.toDateString();
+    </script>
+</body>
 </html>
